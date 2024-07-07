@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const ExportTopBooks = () => {
     return (
         <div className="p-5 mb-4 bg-dark header">
@@ -5,8 +7,8 @@ export const ExportTopBooks = () => {
                 <div >
                     <h1 className="display-5 fw-bold">Find your books!</h1>
                     <p className="col-md-8 fs-4">Which books would you have?</p>
-                    <a type="button" className="btn main-color btn-lg text-white" href="#">
-                        Explore top books</a>
+                    <Link type="button" className="btn main-color btn-lg text-white" to="/search">
+                        Explore top books</Link>
                 </div>
             </div>
         </div>
